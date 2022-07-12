@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NubankClone.Views.PhysicalCard"
+             NavigationPage.HasNavigationBar="True" Title="Cartão físico">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="button_help"/>
+    </ContentPage.ToolbarItems>
+
+
+    <Grid RowDefinitions="250, 90, 90, 90,170" ColumnDefinitions="*,*">
+        <Image Source="nubank_card.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10"/>
+        <Label Text="Nome" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Start" Margin="30"
+                   FontFamily="PaginaInicialMaior" FontAttributes="Bold" FontSize="16" TextColor="black"/>
+        <Label Text="BEATRIZ R P SANTOS" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="End"
+                   FontFamily="PaginaInicialMaior" FontAttributes="Bold" FontSize="16" Margin="0,30,20,30"
+                   TextColor="LightGray"/>
+        <Label Text="Validade" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Start" Margin="30"
+                   FontFamily="PaginaInicialMaior" FontSize="16" TextColor="black"/>
+        <Label Text="09/2028" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="End"
+                   FontFamily="PaginaInicialMaior"  FontSize="16" Margin="0,30,20,30" TextColor="LightGray"/>
+        <Label Text="Função" Grid.Column="0" Grid.Row="3" HorizontalTextAlignment="Start" Margin="30"
+                   FontFamily="PaginaInicialMaior" FontAttributes="Bold" FontSize="16" TextColor="black"/>
+        <Label Text="Débito e crédito" Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="End"
+                   FontFamily="PaginaInicialMaior" FontSize="16" Margin="0,30,20,30" TextColor="LightGray"/>
+        <FlexLayout Grid.Column="0" Grid.Row="4" Direction="Row" AlignItems="Center"
+                       Padding="90,0,0,0">
+            <ImageButton Style="{StaticResource RoundedLightButton}" Source="block.png" Grid.Column="0"
+                           />
+        </FlexLayout>
+        <FlexLayout Grid.Column="1" Grid.Row="4" Direction="Row" AlignItems="Center">
+            <ImageButton Style="{StaticResource RoundedLightButton}" Source="settings.png" Grid.Column="1"/>
+        </FlexLayout>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NubankClone.App">
+    <Application.Resources>
+        <Color x:Key="MainColor">#8a2be2</Color>
+
+        <Style x:Key="LoginButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource MainColor}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="52"/>
+            <Setter Property="CornerRadius" Value="35"/>
+            <Setter Property="FontFamily" Value="PaginaInicialMaior"/>
+        </Style>
+
+        <Style x:Key="TalkforUsButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LightGray"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HeightRequest" Value="52"/>
+            <Setter Property="WidthRequest" Value="35"/>
+        </Style>
+        
+        <Style x:Key="RoundedLightButton" TargetType="ImageButton">
+            <Setter Property="BorderColor" Value="#d5d5d5" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="CornerRadius" Value="30" />
+            <Setter Property="HeightRequest" Value="60" />
+            <Setter Property="WidthRequest" Value="60" />
+            <Setter Property="Padding" Value="15" />
+            <Setter Property="Margin" Value="20,0" />
+            <Setter Property="BackgroundColor" Value="WhiteSmoke" />
+        </Style>
+
+    </Application.Resources>
+</Application>

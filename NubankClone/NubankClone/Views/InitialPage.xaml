@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NubankClone.Views.InitialPage">
+    <ContentPage.Content>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,50,100,*">
+            <Image Source="logo_nubank.png" Grid.Row="0" Grid.Column="0"
+                   HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="30"
+                   WidthRequest="45" Margin="30"/>
+            <Label Text="Queremos deixar seu roxinho ainda mais protegido. Por isso, sempre vamor pedir uma senha para acessar o aplicativo."
+                   FontFamily="PaginaInicialMaior" TextColor="Black" Grid.Column="0"
+                   Grid.ColumnSpan="2" Grid.Row="1" Margin="30,30,40,40" VerticalOptions="End"
+                   FontSize="Large"/>
+            <Label Text="Saiba mais sobre essa iniciativa." FontFamily="PaginaInicialMenor"
+                   TextColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                   Margin="30,-10"/>
+            <Image Source="seta_diagonal.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"
+                   VerticalOptions="Start" HeightRequest="20" Margin="-9,-9,80,0"/>
+            <Button Style="{StaticResource LoginButton}" Grid.Row="3" Grid.Column="0"
+                    Grid.ColumnSpan="2" Margin="20,80" Text="Usar senha do celular"
+                    FontFamily="PaginaInicialMaior" VerticalOptions="End"/>
+            <Label Text="Essa senha é a mesma forma de validação que você usa para desbloquear seu celular." FontFamily="PaginaInicialMenor"
+                   TextColor="Gray" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                   VerticalOptions="Start" HorizontalOptions="Center" Margin="20,-60"/>
+            <StackLayout Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="GhostWhite">
+                <Label Text="Pular esta explicação da próxima vez que eu abrir o aplicativo do Nubank." FontFamily="PaginaInicialMenor"
+                   TextColor="Black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                   VerticalOptions="Center" Margin="20,30,50,-10"/>
+                <Switch Grid.Column="1" Grid.Row="5" Margin="10,-25" OnColor="#8a2be2" ThumbColor="White"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
